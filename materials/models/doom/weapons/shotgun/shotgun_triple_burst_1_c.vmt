@@ -1,0 +1,50 @@
+VertexLitGeneric
+{
+	$basetexture models/doom/weapons/shotgun/shotgun_triple_burst_c
+	$bumpmap models/doom/weapons/shotgun/shotgun_triple_burst_n
+	
+	$phong 1
+	$phongexponent 20
+	$phongfresnelranges	"[0.25 0.5 1]"
+	$phongboost	0.5
+	$phongalbedotint 1
+	
+	$phongdisablehalflambert 1
+	
+	$envmap models/dredux/cubemaps/cyborg_reflection_armor
+	$normalmapalphaenvmapmask 1
+	
+	$cubemapLDRMul 0.1
+	$cubemapHDRMul 0.1
+	
+	$cubemaptint    "[0.5 0.5 0.5]"
+    $cubemappower   0.8
+    $cubemapmin    0.015
+    $cubemapmax    0.35
+
+    Proxies
+    {
+        drc_ReflectionTint
+        {
+            resultVar $envmaptint
+        }
+	}
+	
+	$color2 "[ 0.7 0.7 0.7 ]"
+	
+	$halflambert 1
+	
+	$detail models\doom\weapons/shotgun\shotgun_triple_burst_mask
+	$detailscale 1
+	$detailblendfactor 0.05
+	$detailblendmode 1
+	
+	$emissiveBlendEnabled 1
+	$emissiveBlendTexture     color/white
+	$emissiveBlendBaseTexture	models/doom/weapons/shotgun/tripleburst_charge_1
+	$emissiveBlendFlowTexture  dev/null
+	$emissiveBlendTint "[1 0.5 0]"
+	$emissiveBlendStrength 1
+	$emissiveBlendScrollVector "[0 0]"	
+
+}

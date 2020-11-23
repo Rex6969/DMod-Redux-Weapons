@@ -1,0 +1,42 @@
+VertexLitGeneric
+{
+	$basetexture models/doom/weapons/heavy_ar/har_harbase_c
+	$bumpmap models/doom/weapons/heavy_ar/har_harbase_n
+	//$bumpmap dev/flat_normal
+	
+	$phong 1
+	$phongexponent 20
+	$phongfresnelranges	"[0.25 0.5 1]"
+	$phongboost	0.5
+	$phongalbedotint 1
+	
+	$phongdisablehalflambert 1
+	
+	$envmap models/dredux/cubemaps/cyborg_reflection_armor
+	$envmaptint "[ 0.05 0.05 0.05 ]"
+	$normalmapalphaenvmapmask 1
+
+	$cubemapHDRMul 0.5
+	$cubemapLDRMul 0.2
+
+	$cubemaptint    "[0.025 0.025 0.025]"
+    $cubemappower   0.25
+    $cubemapmin    0.05
+    $cubemapmax    1
+
+    Proxies
+    {
+        drc_ReflectionTint
+        {
+            resultVar $envmaptint
+        }
+	}
+	
+	$color2 "[ 0.8 0.8 0.8 ]"
+
+	$detail models/doom/weapons/heavy_ar/har_harbase_mask
+	$detailscale 1
+	$detailblendfactor 0.05
+	$detailblendmode 1
+
+}

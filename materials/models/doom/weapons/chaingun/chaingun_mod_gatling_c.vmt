@@ -1,0 +1,50 @@
+VertexLitGeneric
+{
+	$basetexture models/doom/weapons/chaingun/chaingun_mod_gatling_c
+	$bumpmap models/doom/weapons/chaingun/chaingun_mod_gatling_n
+	//$bumpmap dev/flat_normal
+	
+	$phong 1
+	$phongexponent 10
+	$phongfresnelranges	"[0.25 0.5 1]"
+	$phongboost	0.5
+	$phongalbedotint 1
+	
+	$phongdisablehalflambert 1
+	
+	$envmap models/dredux/cubemaps/cyborg_reflection_armor
+	$envmaptint "[ 0.025 0.025 0.025 ]"
+	$normalmapalphaenvmapmask 1
+	
+	$cubemapHDRMul 1
+	$cubemapLDRMul 0.2
+	
+	$cubemaptint    "[ 0.025 0.025 0.025 ]"
+    $cubemappower   0.5
+    $cubemapmin    0.025
+    $cubemapmax    0.5
+
+    Proxies
+    {
+        drc_ReflectionTint
+        {
+            resultVar $envmaptint
+        }
+	}
+	
+	$color2 "[ 0.8 0.8 0.8 ]"
+	
+	$detail models/doom/weapons/chaingun/chaingun_mod_gatling_mask
+	$detailscale 1
+	$detailblendfactor 0.05
+	$detailblendmode 1
+	
+	$emissiveBlendEnabled 1
+	$emissiveBlendTexture color/white
+	$emissiveBlendBaseTexture models/doom/weapons/chaingun/chaingun_mod_gatling_e
+	$emissiveBlendFlowTexture  dev/null
+	$emissiveBlendTint "[0.1 0.6 1]"
+	$emissiveBlendStrength 1
+	$emissiveBlendScrollVector "[0 0]"	
+
+}

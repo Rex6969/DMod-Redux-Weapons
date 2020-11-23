@@ -1,0 +1,46 @@
+VertexLitGeneric
+{
+	$basetexture models/doom/weapons/pistol/pistol_dlc1_c
+	$bumpmap models/doom/weapons/pistol/pistol_dlc1_n
+	//$bumpmap dev/flat_normal
+	
+	$phong 1
+	$phongexponent 40
+	$phongfresnelranges	"[0.25 0.5 1]"
+	$phongboost	0.5
+	$phongalbedotint 1
+	
+	$phongdisablehalflambert 1
+	
+	$envmap models/dredux/cubemaps/cyborg_reflection_armor
+	$normalmapalphaenvmapmask 1
+	
+	$cubemapLDRMul 0.2
+	
+	$cubemaptint    "[0.005 0.005 0.005]"
+    $cubemappower   1
+    $cubemapmin    0.05
+    $cubemapmax    0.35
+
+    Proxies
+    {
+        drc_ReflectionTint
+        {
+            resultVar $envmaptint
+        }
+	}
+	
+	$color2 "[ 0.8 0.8 0.8 ]"
+	
+	$halflambert 1
+	
+	$detail models/doom/weapons/pistol/pistol_dlc1_mask
+	$detailscale 1
+	$detailblendfactor 0.02
+	$detailblendmode 1
+	
+	$selfillum 1
+	$selfillumtint "[ 16 16 16 ]"
+
+
+}

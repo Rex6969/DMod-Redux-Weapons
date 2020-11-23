@@ -1,0 +1,39 @@
+VertexLitGeneric
+{
+	$basetexture models\doom\player\praetor\doommarine_playerhands_c
+	$bumpmap  models\doom\player\praetor\doommarine_playerhands_n
+
+	$envmap models/dredux/cubemaps/cyborg_reflection_armor
+	$envmaptint "[ 0.05 0.05 0.05 ]"
+	$normalmapalphaenvmapmask 1
+	
+	$cubemapHDRMul 0.2
+	$cubemapLDRMul 0.2
+	
+	$cubemaptint    "[0.125 0.125 0.125]"
+    $cubemappower   0.4
+    $cubemapmin    0.05
+    $cubemapmax    0.25
+
+    Proxies
+    {
+        drc_ReflectionTint
+        {
+            resultVar $envmaptint
+        }
+	}
+	
+	$phong 1
+	$phongexponent 20
+	$phongfresnelranges	"[0.25 0.5 1]"
+	$phongboost	0.35
+	$phongalbedotint 1
+	
+	$color2 "[ 0.8 0.8 0.8 ]"
+	
+	$detail models\doom\player\praetor\doommarine_playerhands_mask
+	$detailscale 1
+	$detailblendfactor 0.05
+	$detailblendmode 1
+	
+}

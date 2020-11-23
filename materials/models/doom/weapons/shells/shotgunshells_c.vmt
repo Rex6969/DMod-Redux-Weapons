@@ -1,0 +1,27 @@
+VertexLitGeneric
+{
+	$basetexture models\doom\weapons\shells\shotgunshells_c
+	$bumpmap dev/flat_normal
+
+	$phong 1
+	$phongexponent 30
+	$phongfresnelranges	"[0.25 0.5 1]"
+	$phongboost	1
+	
+	$envmap env_cubemap
+	$envmaptint "[ 0.05 0.05 0.05 ]"
+	
+	$cubemaptint    "[1 1 1]"
+    $cubemappower   0.25
+    $cubemapmin    0.05
+    $cubemapmax    1
+	
+	Proxies
+    {
+        drc_ReflectionTint
+        {
+            resultVar $envmaptint
+        }
+	}
+	
+}

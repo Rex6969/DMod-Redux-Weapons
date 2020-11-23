@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	$basetexture models\doom\weapons\double_barrel\double_barrel_sg_c
+	$bumpmap models\doom\weapons\double_barrel\double_barrel_sg_n
+	$phongexponenttexture models\doom\weapons\double_barrel\double_barrel_sg_exp
+	
+	$phong 1
+	$phongfresnelranges	"[0.5 1 1.5]"
+	
+	$phongboost	0.5
+	$phongalbedotint 1
+	
+}

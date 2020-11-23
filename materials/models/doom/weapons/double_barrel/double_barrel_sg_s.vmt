@@ -1,0 +1,33 @@
+VertexLitGeneric
+{
+	$basetexture models\doom\weapons\double_barrel\double_barrel_sg_mask
+	$bumpmap models\doom\weapons\double_barrel\double_barrel_sg_n
+	
+	$phong 1
+	$phongfresnelranges	"[0.25 0.5 1]"
+	
+	$phongboost	0.5
+	$phongexponent 20
+	$phongalbedotint 1
+	
+	$envmap env_cubemap
+	//$envmaptint "[ 0.05 0.05 0.05 ]"
+	
+	$cubemaptint   "[1 1 1]"
+    $cubemappower  1.2
+    $cubemapmin    0.05
+    $cubemapmax    1
+	
+	Proxies
+    {
+        drc_ReflectionTint
+        {
+            resultVar $envmaptint
+        }
+		
+	}
+	
+	$translucent 1
+	$color2 "[ 0.3 0.3 0.3 ]"
+	
+}
