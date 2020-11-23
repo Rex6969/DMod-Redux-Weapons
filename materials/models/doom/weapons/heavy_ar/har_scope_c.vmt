@@ -13,16 +13,16 @@ VertexLitGeneric
 	$phongdisablehalflambert 1
 	
 	$envmap models/dredux/cubemaps/cyborg_reflection_armor
-	$envmaptint "[0.05 0.05 0.05]"
 	$normalmapalphaenvmapmask 1
 	
 	$cubemapHDRMul 0.2
-	$cubemapLDRMul 0.2
+	$cubemapLDRMul 0.05
 	
-	$cubemaptint    "[0.05 0.05 0.05]"
-    $cubemappower  1
+	$cubemaptint    "[1 1 1]"
+    $cubemappower   0.5
     $cubemapmin    0.05
     $cubemapmax    1
+
 
     Proxies
     {

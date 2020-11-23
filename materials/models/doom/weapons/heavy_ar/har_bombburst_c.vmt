@@ -16,12 +16,12 @@ VertexLitGeneric
 	$normalmapalphaenvmapmask 1
 	
 	$cubemapHDRMul 0.2
-	$cubemapLDRMul 0.2
+	$cubemapLDRMul 0.05
 	
-	$cubemaptint    "[0.25 0.25 0.25]"
+	$cubemaptint    "[1 1 1]"
     $cubemappower   0.5
-    $cubemapmin    0.015
-    $cubemapmax    0.35
+    $cubemapmin    0.05
+    $cubemapmax    1
 
     Proxies
     {

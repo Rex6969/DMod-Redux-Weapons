@@ -11,6 +11,8 @@ VertexLitGeneric
 	$envmap env_cubemap
 	$envmaptint "[ 0.05 0.05 0.05 ]"
 	
+	$cubemapLDRMul 0.1
+	
 	$cubemaptint    "[1 1 1]"
     $cubemappower   0.25
     $cubemapmin    0.05

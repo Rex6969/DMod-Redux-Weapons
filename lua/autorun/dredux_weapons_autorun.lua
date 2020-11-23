@@ -36,6 +36,7 @@ if SERVER then
 	CreateConVar( "dredux_dmg_shotgun", "60", FCVAR_ARCHIVE ) -- Shotgun normal damage PER SHOT, NOT PER SINGLE PELLET
 	CreateConVar( "dredux_dmg_shotgun_burst", "55", FCVAR_ARCHIVE ) -- Shotgun burst damage PER SHOT, NOT PER SINGLE PELLET
 	CreateConVar( "dredux_dmg_shotgun_grenade", "80", FCVAR_ARCHIVE ) -- Shotgun grenade damage
+	CreateConVar( "dredux_dmg_shotgun_grenade_sticky", "70", FCVAR_ARCHIVE ) -- Shotgun grenade damage
 	
 	-- Super Shotgun
 	

@@ -1,0 +1,42 @@
+VertexLitGeneric
+{
+	$basetexture models/doom_eternal/weapons/shotgun/combatshotgun_poprocket_ammo
+	//$bumpmap  models/doom_eternal/weapons/shotgun/combatshotgun_poprocket_ammo_n
+	$bumpmap dev/flat_normal
+	$phongexponenttexture  models/doom_eternal/weapons/shotgun/combatshotgun_poprocket_ammo_mask
+	
+	$phong 1
+	$phongexponent 40
+	$phongfresnelranges	"[0.25 0.5 1]"
+	$phongboost	0.5
+	$phongalbedotint 1
+	
+	$envmap models/dredux/cubemaps/cyborg_reflection_armor
+	$normalmapalphaenvmapmask 1
+	
+	$cubemapHDRMul 0.2
+	$cubemapLDRMul 0.1
+	
+	$cubemaptint    "[1 1 1]"
+    $cubemappower   0.2
+    $cubemapmin    0.05
+    $cubemapmax    1
+
+    Proxies
+    {
+        drc_ReflectionTint
+        {
+            resultVar $envmaptint
+        }
+	}
+	
+	$color2 "[ 0.7 0.7 0.7 ]"
+	
+	$halflambert 1
+	
+	$detail models/doom_eternal/weapons/shotgun/combatshotgun_poprocket_ammo_mask
+	$detailscale 1
+	$detailblendfactor 0.1
+	$detailblendmode 1
+
+}

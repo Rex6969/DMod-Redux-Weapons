@@ -10,11 +10,13 @@ VertexLitGeneric
 	$phongexponent 20
 	$phongalbedotint 1
 	
-	$envmap env_cubemap
-	//$envmaptint "[ 0.05 0.05 0.05 ]"
+	$envmap models/dredux/cubemaps/cyborg_reflection_armor
+	
+	$cubemapHDRMul 0.2
+	$cubemapLDRMul 0.05
 	
 	$cubemaptint   "[1 1 1]"
-    $cubemappower  1.2
+    $cubemappower  1
     $cubemapmin    0.05
     $cubemapmax    1
 	

@@ -5,24 +5,23 @@ VertexLitGeneric
 	//$bumpmap dev/flat_normal
 	
 	$phong 1
-	$phongexponent 10
+	$phongexponent 40
 	$phongfresnelranges	"[0.25 0.5 1]"
 	$phongboost	0.5
 	$phongalbedotint 1
 	
 	$phongdisablehalflambert 1
-	
+
 	$envmap models/dredux/cubemaps/cyborg_reflection_armor
-	$envmaptint "[ 0.025 0.025 0.025 ]"
 	$normalmapalphaenvmapmask 1
 	
-	$cubemapHDRMul 1
-	$cubemapLDRMul 0.2
+	$cubemapHDRMul 0.2
+	$cubemapLDRMul 0.05
 	
-	$cubemaptint    "[ 0.025 0.025 0.025 ]"
+	$cubemaptint    "[1 1 1]"
     $cubemappower   0.5
-    $cubemapmin    0.025
-    $cubemapmax    0.5
+    $cubemapmin    0.05
+    $cubemapmax    1
 
     Proxies
     {
